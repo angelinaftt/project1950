@@ -1,4 +1,6 @@
-[Alistar's Project Outline](http://thenet.ca/1950/project/)
+## Useful Links
+- [Alistar's Project Outline](http://thenet.ca/1950/project/)
+- [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Project Site
 [Link to Tumblr](http://projectsite.tumblr.com)
