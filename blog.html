@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    <meta name="color:Background" content="#ffffff">
+    <meta name="image:Background" content="">
+    <meta name="image:Header" content="">
+    <meta name="font:Text" content="Helvetica">
+    <meta name="color:Text" content="#333333">
+    <meta name="color:Border" content="#1a1a1a">
+    <meta name="color:Content" content="#ffffff">
+    {/block:Description}
+
+    <style>
+
+        body {font-family:  Arial, Verdana, sans-serif;
+            background-color: #5B6370;
+        }
+
+        #wrapper { background-color: #91C6F2;
+            color: #000066;
+            width: 100%;
+            margin: auto;
+
+        }
+        #leftcolumn { float: left;
+            width: 200px;
+        }
+        #rightcolumn { margin-left: 200px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        header{ background-color: #3F9AE5;
+            background: linear-gradient(top, #b9d8f2 0%, #3F9AE5 100%);
+            background: -moz-linear-gradient(top, #b9d8f2 0%, #3F9AE5 100%);
+            background: -webkit-linear-gradient(top, #b9d8f2 0%,#3F9AE5 100%);
+            color: #ffffff;
+            font-size: 125%;
+            padding: 5px;
+
+        }
+
+        header h1{font-family: times, arial, sans-serif;
+            text-align: center;
+        }
+
+        header h2 { color: #2d2d2d;
+            font-family: arial, times, sans-serif;
+            text-align: center;
+            font-size:18px;
+            font-style:italic;
+            font-weight:normal;
+        }
+
+        h2 { color: #4181AC;
+            font-family: times, arial, sans-serif;
+            padding-left:20px;
+        }
+
+        p {padding: 0 20px;}
+
+
+        <!--Nav starts-->
+    nav{padding:auto;
+            }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav    ul li {
+            display: block;
+        }
+        nav li ul {
+            display: none;
+        }
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            border-top: 1px solid #ededed;
+            padding: 5px 15px 5px 20px;
+            background: #145B95;
+            font-weight:bold;
+            margin-left: 1px;
+            white-space: nowrap;
+        }
+        nav ul li ul li a{
+            padding-left: 30px;
+        }
+
+
+        nav ul li a:hover {
+            background: #6EB6F2;
+        }
+        nav li:hover ul {
+            display: block;
+        }
+        nav li:hover li {
+            float: none;
+            font-size: 11px;
+        }
+        nav li:hover a {
+            background: #717E95;
+        }
+        nav li:hover li a:hover {
+            background: #4181AC;
+        }
+        nav .clearall {
+            clear:both;
+        }
+
+        <!--nav ends-->
+
+.content {padding: 20px;
+
+            }
+
+        .floatright { margin: 10px;
+            float: right;
+            padding: 0 10px;
+
+
+        }
+        .floatleft{ margin: 10px;
+            float: left;
+            padding: 0 10px;
+        }
+
+        .clearboth{clear:both;}
+
+        dt{font-weight:bold;
+            padding-left:20px;
+        }
+
+        dd{
+            padding:10px;
+        }
+
+        #footer {color:#ffffff;
+            background-color: #3F9AE5;
+            background: linear-gradient(top, #b9d8f2 0%, #3F9AE5 100%);
+            background: -moz-linear-gradient(top, #b9d8f2 0%, #3F9AE5 100%);
+            background: -webkit-linear-gradient(top, #b9d8f2 0%,#3F9AE5 100%);
+            font-size:70%;
+            text-align: center;
+            clear: right;
+            padding:20px;
+            margin-top:20px;
+        }
+        #leftcolumn ul { list-style-type: none;
+        }
+        #leftcolumn a {text-decoration: none;
+        }
+
+        #blog{
+            padding-left: 20px;
+            border-right:solid;
+            text-align:left;}
+
+        .audio-post,.video-post{list-style: none;}
+
+        .photo-post img{   border:solid;
+            border-radius:10%;}
+
+        .link-post a:link{color:blue;}
+        .link-post a:visited{color:purple;}
+        .link-post a:hover{color:red;
+            text-decoration: blink;}
+        .link-post a:active{color:pink;
+            text-decoration: blink;}
+
+        .caption{font: smaller;}
+
+    </style>
+<body>
+<div id="wrapper">
+
+    <div id="leftcolumn">
+        <nav>
+            <ul id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a>
+                    <ul>
+                        <li><a href="">The Team</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Vision</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Products</a>
+                    <ul>
+                        <li><a href="">Cozy Couch</a></li>
+                        <li><a href="">Great Table</a></li>
+                        <li><a href="">Small Chair</a></li>
+                        <li><a href="">Shiny Shelf</a></li>
+                        <li><a href="">Invisible Nothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a>
+                    <ul>
+                        <li><a href="">Online</a></li>
+                        <li><a href="">Right Here</a></li>
+                        <li><a href="">Somewhere Else</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="rightcolumn">
+        <header>
+            <h1>COMP 1950</h1>
+            <h2>Intermediate Web Design & Development</h2>
+        </header>
+        <div class="content">
+            <div id="blog">
+
+                {block:Description}
+                <p>{Description}</p>
+                {/block:Description}
+
+                <div id="blog">
+                    {block:Posts}
+
+                    {block:Text}
+                    <article class="post{PostType}">
+                        <h1>{Title}{block:PostTitle}-{PostTitle}{/block:PostTitle}</h1>
+                        {body}
+                    </article>
+
+                    {/block:Text}
+
+                    {block:Photo}
+                    <div class="photo-post">
+                        {LinkOpenTag}
+                        <img src="{PhotoURL-250}" alt="{PhotoAlt">
+                        {LinkCloseTag}
+
+                        {block:Caption}
+                        {Caption}
+                        {/block:Caption}
+                    </div>
+                    {/block:Photo}
+
+                    {block:Link}
+                    <div class="link-post">
+                        <a href="{URL}" {Target}>{Name}</a>
+                        {block:Description}
+                        <div class="description">{Description}</div>
+                        {/block:Description}
+                    </div>
+                    {/block:Link}
+
+                    {block:Video}
+                    <li class="video-post">
+                        {Video-250}
+                        {block:Caption}
+                        <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                    {/block:Video}
+
+                    {block:Audio}
+                    <li class="audio-post">
+                        {AudioPlayerBlack}
+                        {block:Caption}
+                        <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                    {/block:Audio}
+
+                    {block:Date}
+                    {block:NewDayDate}
+                    {DayOfWeek}, {Month} {DayOfMonth}, {Year}
+                    {/block:NewDayDate}
+                    Posted <a href="{Permalink}">{TimeAgo}</a>
+                    {/block:Date}
+                    <br>
+                    <hr>
+                    <br>
+
+                    {/block:Posts}
+                </div>
+
+                {block:Pagination}
+                <div id="pagination">
+                    {block:PreviousPage}
+                    <a href="{PreviousPage}">Previous</a>
+                    {/block:PreviousPage}
+
+                    {block:JumpPagination length="5"}
+                    {block:CurrentPage}
+                    <span class="current_page">{PageNumber}</span>
+                    {/block:CurrentPage}
+
+                    {block:JumpPage}
+                    <a class="jump_page" href="{URL}">{PageNumber}</a>
+                    {/block:JumpPage}
+                    {/block:JumpPagination}
+
+                    {block:NextPage}
+                    <a href="{NextPage}">Next</a>
+                    {/block:NextPage}
+                </div>
+
+
+
+            </div>
+        </div>
+</body>
+</html>
